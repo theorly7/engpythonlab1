@@ -70,6 +70,9 @@ def percentage_diagram():
     with open('sequence.txt', 'r') as file:
         numbers = [float(line.strip()) for line in file]
 
+    white = '\033[107m \033[0m'
+    red = '\033[41m \033[0m'
+
     firstpart = numbers[:125]
     secondpart = numbers[125:]
 
@@ -95,4 +98,3 @@ print_polish_flag()
 print_pattern()
 print_sqrt_graph()
 percentage_diagram()
-
